@@ -1,0 +1,83 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+<div id="backgroundOverlay"></div>
+<div class="header-block">
+  <div class="cow-image-wrapper">
+    <img class="cow-image" src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=721&q=80" alt="">
+  </div>
+
+  <span class="subtitle">2020 Annual</span>
+  <h1 id="title">Cow Survey</h1> 
+  
+  <p id="description">
+  Thank you for participating in the annual cow survey. Please fill in the form honestly.
+  </p>
+</div>
+
+<form action="" id="survey-form">
+   <label class="container-label" for="name" id="name-label">
+     Your Full Name <input type="text" id="name" placeholder="What is your name?" required>
+  </label>
+  
+  <label class="container-label" for="email" id="email-label">
+    Your Email Address <input type="email" id="email" placeholder="What is your email address?" required>
+  </label>
+  
+  <label class="container-label" for="number" id="number-label">
+    Your Number of Legs (Max of 10) <input type="number" id="number" min="0" max="10" placeholder="How many legs do you have?">
+  </label>
+  
+  <label class="standalone-label"for="breed">Your Breed</label>
+  <select name="breed" id="dropdown">
+     <option value="" disabled selected>What breed of cow are you?</option>
+    <option value="blackAngus">Black Angus</option>
+    <option value="charolais">Charolais</option>
+    <option value="hereford">Hereford</option>
+    <option value="simmenal">Simmental</option>
+    <option value="redAngus">Red Angus</option>
+    <option value="gelbvieh">Gelbvieh</option>
+    <option value="holstein">Holstein</option>
+  </select>
+  
+  <p class="standalone-label">Your Gender</p>  
+  <label class="input-compound" for="male">
+    <input id="male" type="radio" name="gender" value="male"> Male
+  </label>
+  
+  <label class="input-compound" for="female">
+    <input id="female" type="radio" name="gender" value="female"> Female
+  </label>
+  
+  <label class="input-compound input-compound-last" for="nonBinray">
+    <input id="nonBinray" type="radio" name="gender" value="nonBinary"> Non-Binary 
+  </label>
+  
+  <p class="standalone-label">Your Diet</p>
+  
+  <label class="input-compound" for="checkbox-1">
+    <input type="checkbox" name="breed" value="1"> Hay
+  </label>
+  <label class="input-compound" for="checkbox-2">
+    <input type="checkbox" name="breed" value="2"> Silage
+  </label>
+  <label class="input-compound input-compound-last" for="checkbox-3">
+    <input type="checkbox" name="breed" value="3"> Grass
+  </label>
+  
+<label for="story" class="standalone-label">Your Story (Tell something about yourself)</label>
+  <textarea name="story" id="" cols="30" rows="10"></textarea>
+  
+  <input type="submit" id="submit">
+</form>
